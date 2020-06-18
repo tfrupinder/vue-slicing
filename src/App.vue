@@ -4,19 +4,21 @@
       <a href="#" class="btn navbar-brand">Logo Here</a>
       <div class="navbar-nav ml-auto">
         <li class="nav-item ml-auto mx-auto w-100px">
-          <div class="dropdown">
-            <a class="btn btn-none dropdown-toggle" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <div class="dropdown mr-2 mt-2">
+            <a class="btn btn-none dropdown-toggle" data-toggle="dropdown">
               Eng
             </a>
-            <div class="dropdown-menu" id="collapsibleNavbar">
+            <div class="dropdown-menu">
               <a class="dropdown-item" href="#">Link 1</a>
               <a class="dropdown-item" href="#">Link 2</a>
               <a class="dropdown-item" href="#">Link 3</a>
             </div>
           </div>
         </li>
-        <li class="nav-item mx-auto w-100px">
-          <span class="navbar-toggler-icon"></span>
+        <li class="nav-item mr-5 w-100px">
+          <div>
+           <span class="navbar-toggler-icon icon-bar" ></span>  
+          </div>
         </li>
       </div>
     </nav>
@@ -32,3 +34,9 @@ export default {
   name: "app",
 };
 </script>
+<style scoped>
+.icon-bar{
+    font-size: 2em;
+    color: #11C176 !important;
+}
+</style>
